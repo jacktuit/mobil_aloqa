@@ -1,29 +1,32 @@
 import 'package:flutter/material.dart';
-import 'package:mobil_aloqa/practical/number_3.dart';
+
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 
-import 'number_1.dart';
-import 'number_2.dart';
-import 'number_4.dart';
-import 'number_5.dart';
-import 'number_6.dart';
-import 'number_7.dart';
+import 'number_1_lab.dart';
+import 'number_2_lab.dart';
+import 'number_3_lab.dart';
+import 'number_4_lab.dart';
+import 'number_5_lab.dart';
+import 'number_6_lab.dart';
 
-class NumbersPractical extends StatefulWidget {
-  const NumbersPractical({Key? key}) : super(key: key);
+
+class NumbersLab extends StatefulWidget {
+  const NumbersLab({Key? key}) : super(key: key);
 
   @override
-  State<NumbersPractical> createState() => _NumbersPracticalState();
+  State<NumbersLab> createState() => _NumbersLabState();
 }
 
 final GlobalKey<SfPdfViewerState> _pdfViewerKey = GlobalKey();
 
-class _NumbersPracticalState extends State<NumbersPractical> {
+class _NumbersLabState extends State<NumbersLab> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(centerTitle: true,
-            title: Text('Practical work',style: TextStyle(color: Colors.white),),
+        appBar: AppBar(
+          centerTitle: true,
+            title: Text('Laboratory work',style: TextStyle(color: Colors.white),),
+
             actions: <Widget>[
           IconButton(
             icon: const Icon(
@@ -36,6 +39,7 @@ class _NumbersPracticalState extends State<NumbersPractical> {
             },
           ),
         ]),
+        backgroundColor: Colors.white,
         body: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Column(
@@ -46,7 +50,7 @@ class _NumbersPracticalState extends State<NumbersPractical> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => Number1(),
+                            builder: (context) => Number1_Lab(),
                           ));
                     });
                   },
@@ -59,16 +63,16 @@ class _NumbersPracticalState extends State<NumbersPractical> {
                       width: double.infinity,
                       child: Center(
                           child: Text(
-                        'Practical-1',
-                        style: TextStyle(color: Colors.white, fontSize: 16),
-                      )))),SizedBox(height: 10,),
+                            'Laboratory-1',
+                            style: TextStyle(color: Colors.white, fontSize: 16),
+                          )))),SizedBox(height: 10,),
               InkWell(
                   onTap: () {
                     setState(() {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => Number2(),
+                            builder: (context) => Number2_Lab(),
                           ));
                     });
                   },
@@ -81,16 +85,16 @@ class _NumbersPracticalState extends State<NumbersPractical> {
                       width: double.infinity,
                       child: Center(
                           child: Text(
-                        'Practical-2',
-                        style: TextStyle(color: Colors.white, fontSize: 16),
-                      )))),SizedBox(height: 10,),
+                            'Laboratory-2',
+                            style: TextStyle(color: Colors.white, fontSize: 16),
+                          )))),SizedBox(height: 10,),
               InkWell(
                   onTap: () {
                     setState(() {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => Number3(),
+                            builder: (context) => Number3_Lab(),
                           ));
                     });
                   },
@@ -103,16 +107,16 @@ class _NumbersPracticalState extends State<NumbersPractical> {
                       width: double.infinity,
                       child: Center(
                           child: Text(
-                        'Practical-3',
-                        style: TextStyle(color: Colors.white, fontSize: 16),
-                      )))),SizedBox(height: 10,),
+                            'Laboratory-3',
+                            style: TextStyle(color: Colors.white, fontSize: 16),
+                          )))),SizedBox(height: 10,),
               InkWell(
                   onTap: () {
                     setState(() {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => Number4(),
+                            builder: (context) => Number4_Lab(),
                           ));
                     });
                   },
@@ -125,16 +129,16 @@ class _NumbersPracticalState extends State<NumbersPractical> {
                       width: double.infinity,
                       child: Center(
                           child: Text(
-                        'Practical-4',
-                        style: TextStyle(color: Colors.white, fontSize: 16),
-                      )))),SizedBox(height: 10,),
+                            'Laboratory-4',
+                            style: TextStyle(color: Colors.white, fontSize: 16),
+                          )))),SizedBox(height: 10,),
               InkWell(
                   onTap: () {
                     setState(() {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => Number5(),
+                            builder: (context) => Number5_Lab(),
                           ));
                     });
                   },
@@ -147,16 +151,16 @@ class _NumbersPracticalState extends State<NumbersPractical> {
                       width: double.infinity,
                       child: Center(
                           child: Text(
-                        'Practical-5',
-                        style: TextStyle(color: Colors.white, fontSize: 16),
-                      )))),SizedBox(height: 10,),
+                            'Laboratory-5',
+                            style: TextStyle(color: Colors.white, fontSize: 16),
+                          )))),SizedBox(height: 10,),
               InkWell(
                   onTap: () {
                     setState(() {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => Number6(),
+                            builder: (context) => Number6_Lab(),
                           ));
                     });
                   },
@@ -169,33 +173,13 @@ class _NumbersPracticalState extends State<NumbersPractical> {
                       width: double.infinity,
                       child: Center(
                           child: Text(
-                        'Practical-6',
-                        style: TextStyle(color: Colors.white, fontSize: 16),
-                      )))),SizedBox(height: 10,),
-              InkWell(
-                  onTap: () {
-                    setState(() {
-                      Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                            builder: (context) => Number7(),
-                          ));
-                    });
-                  },
-                  child: Container(
-                      padding: EdgeInsets.only(top: 12, bottom: 12),
-                      decoration: BoxDecoration(
-                        borderRadius: BorderRadius.circular(16),
-                        color: Colors.orangeAccent,
-                      ),
-                      width: double.infinity,
-                      child: Center(
-                          child: Text(
-                        'Practical-7',
-                        style: TextStyle(color: Colors.white, fontSize: 16),
-                      )))),SizedBox(height: 10,),
+                            'Laboratory-6',
+                            style: TextStyle(color: Colors.white, fontSize: 16),
+                          )))),SizedBox(height: 10,),
+
             ],
           ),
         ));
   }
 }
+

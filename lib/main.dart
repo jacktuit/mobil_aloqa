@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:mobil_aloqa/laboratory/numbers_lab.dart';
 
 import 'package:mobil_aloqa/practical/numbers.dart';
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
@@ -17,9 +18,9 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.orange,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: Center(child: const MyHomePage(title: 'Mobil aloqa')),
     );
   }
 }
@@ -41,7 +42,9 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(title: Text(widget.title), actions: <Widget>[
+        appBar: AppBar(title: Text(widget.title,style: TextStyle(color: Colors.white),),
+            centerTitle: true,
+            actions: <Widget>[
           IconButton(
             icon: const Icon(
               Icons.bookmark,
@@ -53,9 +56,12 @@ class _MyHomePageState extends State<MyHomePage> {
             },
           ),
         ]),
-        body: Padding(
-          padding: const EdgeInsets.all(8.0),
+        body: Container(
+          padding: EdgeInsets.only(left: 20,right: 20),
+          decoration: BoxDecoration(image: DecorationImage(image:ExactAssetImage('assets/tatu.jpg',),fit: BoxFit.cover )),
           child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               InkWell(
                   onTap: () {
@@ -71,16 +77,16 @@ class _MyHomePageState extends State<MyHomePage> {
                       padding: EdgeInsets.only(top: 12, bottom: 12),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(16),
-                        color: Colors.greenAccent,
+                        color: Colors.orangeAccent,
                       ),
                       width: double.infinity,
                       child: Center(
                           child: Text(
-                        'Laboratory',
+                        'Practical',
                         style: TextStyle(color: Colors.white, fontSize: 16),
                       )))),
               SizedBox(
-                height: 10,
+                height: 20,
               ),
               InkWell(
                   onTap: () {
@@ -88,7 +94,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                            builder: (context) => NumbersPractical(),
+                            builder: (context) => NumbersLab(),
                           ));
                     });
                   },
@@ -96,12 +102,12 @@ class _MyHomePageState extends State<MyHomePage> {
                       padding: EdgeInsets.only(top: 12, bottom: 12),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(16),
-                        color: Colors.greenAccent,
+                        color: Colors.orangeAccent,
                       ),
                       width: double.infinity,
                       child: Center(
                           child: Text(
-                        'Practical',
+                        'Laboratory',
                         style: TextStyle(color: Colors.white, fontSize: 16),
                       )))),
             ],
