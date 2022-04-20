@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.orange,
       ),
-      home: Center(child: const MyHomePage(title: 'Mobil aloqa')),
+      home: const MyHomePage(title: 'Mobil aloqa tarmoqlarini loyihalash',),
     );
   }
 }
@@ -42,20 +42,9 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(title: Text(widget.title,style: TextStyle(color: Colors.white),),
+        appBar: AppBar(title: Text(widget.title,style: TextStyle(color: Colors.white,fontSize: 14),),
             centerTitle: true,
-            actions: <Widget>[
-          IconButton(
-            icon: const Icon(
-              Icons.bookmark,
-              color: Colors.white,
-              semanticLabel: 'Bookmark',
-            ),
-            onPressed: () {
-              _pdfViewerKey.currentState?.openBookmarkView();
-            },
-          ),
-        ]),
+           ),
         body: Container(
           padding: EdgeInsets.only(left: 20,right: 20),
           decoration: BoxDecoration(image: DecorationImage(image:ExactAssetImage('assets/tatu.jpg',),fit: BoxFit.cover )),
@@ -82,7 +71,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       width: double.infinity,
                       child: Center(
                           child: Text(
-                        'Practical',
+                        'Amaliy ish',
                         style: TextStyle(color: Colors.white, fontSize: 16),
                       )))),
               SizedBox(
@@ -107,7 +96,7 @@ class _MyHomePageState extends State<MyHomePage> {
                       width: double.infinity,
                       child: Center(
                           child: Text(
-                        'Laboratory',
+                        'Laboratoriya ',
                         style: TextStyle(color: Colors.white, fontSize: 16),
                       )))),
             ],

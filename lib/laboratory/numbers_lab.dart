@@ -25,20 +25,9 @@ class _NumbersLabState extends State<NumbersLab> {
     return Scaffold(
         appBar: AppBar(
           centerTitle: true,
-            title: Text('Laboratory work',style: TextStyle(color: Colors.white),),
+            title: Text('Laboratoriya ishlari',style: TextStyle(color: Colors.white),),
 
-            actions: <Widget>[
-          IconButton(
-            icon: const Icon(
-              Icons.bookmark,
-              color: Colors.white,
-              semanticLabel: 'Bookmark',
-            ),
-            onPressed: () {
-              _pdfViewerKey.currentState?.openBookmarkView();
-            },
-          ),
-        ]),
+       ),
         backgroundColor: Colors.white,
         body: Padding(
           padding: const EdgeInsets.all(8.0),
@@ -63,7 +52,7 @@ class _NumbersLabState extends State<NumbersLab> {
                       width: double.infinity,
                       child: Center(
                           child: Text(
-                            'Laboratory-1',
+                            '1- laboratoriya ishi',
                             style: TextStyle(color: Colors.white, fontSize: 16),
                           )))),SizedBox(height: 10,),
               InkWell(
@@ -85,7 +74,7 @@ class _NumbersLabState extends State<NumbersLab> {
                       width: double.infinity,
                       child: Center(
                           child: Text(
-                            'Laboratory-2',
+                            '2- laboratoriya ishi',
                             style: TextStyle(color: Colors.white, fontSize: 16),
                           )))),SizedBox(height: 10,),
               InkWell(
@@ -107,7 +96,7 @@ class _NumbersLabState extends State<NumbersLab> {
                       width: double.infinity,
                       child: Center(
                           child: Text(
-                            'Laboratory-3',
+                            '3- laboratoriya ishi',
                             style: TextStyle(color: Colors.white, fontSize: 16),
                           )))),SizedBox(height: 10,),
               InkWell(
@@ -129,7 +118,7 @@ class _NumbersLabState extends State<NumbersLab> {
                       width: double.infinity,
                       child: Center(
                           child: Text(
-                            'Laboratory-4',
+                            '4- laboratoriya ishi',
                             style: TextStyle(color: Colors.white, fontSize: 16),
                           )))),SizedBox(height: 10,),
               InkWell(
@@ -151,7 +140,7 @@ class _NumbersLabState extends State<NumbersLab> {
                       width: double.infinity,
                       child: Center(
                           child: Text(
-                            'Laboratory-5',
+                            '5- laboratoriya ishi',
                             style: TextStyle(color: Colors.white, fontSize: 16),
                           )))),SizedBox(height: 10,),
               InkWell(
@@ -173,7 +162,7 @@ class _NumbersLabState extends State<NumbersLab> {
                       width: double.infinity,
                       child: Center(
                           child: Text(
-                            'Laboratory-6',
+                            '6- laboratoriya ishi',
                             style: TextStyle(color: Colors.white, fontSize: 16),
                           )))),SizedBox(height: 10,),
 

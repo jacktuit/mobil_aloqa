@@ -23,19 +23,8 @@ class _NumbersPracticalState extends State<NumbersPractical> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(centerTitle: true,
-            title: Text('Practical work',style: TextStyle(color: Colors.white),),
-            actions: <Widget>[
-          IconButton(
-            icon: const Icon(
-              Icons.bookmark,
-              color: Colors.white,
-              semanticLabel: 'Bookmark',
-            ),
-            onPressed: () {
-              _pdfViewerKey.currentState?.openBookmarkView();
-            },
-          ),
-        ]),
+            title: Text('Amaliy ishlari',style: TextStyle(color: Colors.white),),
+        ),
         body: Padding(
           padding: const EdgeInsets.all(8.0),
           child: Column(
@@ -59,7 +48,7 @@ class _NumbersPracticalState extends State<NumbersPractical> {
                       width: double.infinity,
                       child: Center(
                           child: Text(
-                        'Practical-1',
+                        '1- Amaliy ish',
                         style: TextStyle(color: Colors.white, fontSize: 16),
                       )))),SizedBox(height: 10,),
               InkWell(
@@ -81,7 +70,7 @@ class _NumbersPracticalState extends State<NumbersPractical> {
                       width: double.infinity,
                       child: Center(
                           child: Text(
-                        'Practical-2',
+                        '2- Amaliy ish',
                         style: TextStyle(color: Colors.white, fontSize: 16),
                       )))),SizedBox(height: 10,),
               InkWell(
@@ -103,7 +92,7 @@ class _NumbersPracticalState extends State<NumbersPractical> {
                       width: double.infinity,
                       child: Center(
                           child: Text(
-                        'Practical-3',
+                        '3- Amaliy ish',
                         style: TextStyle(color: Colors.white, fontSize: 16),
                       )))),SizedBox(height: 10,),
               InkWell(
@@ -125,7 +114,7 @@ class _NumbersPracticalState extends State<NumbersPractical> {
                       width: double.infinity,
                       child: Center(
                           child: Text(
-                        'Practical-4',
+                        '4- Amaliy ish',
                         style: TextStyle(color: Colors.white, fontSize: 16),
                       )))),SizedBox(height: 10,),
               InkWell(
@@ -147,7 +136,7 @@ class _NumbersPracticalState extends State<NumbersPractical> {
                       width: double.infinity,
                       child: Center(
                           child: Text(
-                        'Practical-5',
+                        '5- Amaliy ish',
                         style: TextStyle(color: Colors.white, fontSize: 16),
                       )))),SizedBox(height: 10,),
               InkWell(
@@ -169,7 +158,7 @@ class _NumbersPracticalState extends State<NumbersPractical> {
                       width: double.infinity,
                       child: Center(
                           child: Text(
-                        'Practical-6',
+                        '6- Amaliy ish',
                         style: TextStyle(color: Colors.white, fontSize: 16),
                       )))),SizedBox(height: 10,),
               InkWell(
@@ -191,7 +180,7 @@ class _NumbersPracticalState extends State<NumbersPractical> {
                       width: double.infinity,
                       child: Center(
                           child: Text(
-                        'Practical-7',
+                        '7- Amaliy ish',
                         style: TextStyle(color: Colors.white, fontSize: 16),
                       )))),SizedBox(height: 10,),
             ],
