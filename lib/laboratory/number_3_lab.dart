@@ -15,22 +15,22 @@ class _Number3_LabState extends State<Number3_Lab> {
         appBar: AppBar(
 
 
-            actions: <Widget>[
-              IconButton(
-                icon: const Icon(
-                  Icons.bookmark,
-                  color: Colors.white,
-                  semanticLabel: 'Bookmark',
-                ),
-                onPressed: () {
-                  _pdfViewerKey.currentState?.openBookmarkView();
-                },
-              ),
-            ]
+            // actions: <Widget>[
+            //   IconButton(
+            //     icon: const Icon(
+            //       Icons.bookmark,
+            //       color: Colors.white,
+            //       semanticLabel: 'Bookmark',
+            //     ),
+            //     onPressed: () {
+            //       _pdfViewerKey.currentState?.openBookmarkView();
+            //     },
+            //   ),
+            // ]
         ),
 
         body: SfPdfViewer.asset(
-          'assets/3_lab.pdf',
+          'assets/lab3.pdf',
           key: _pdfViewerKey,
         )
 

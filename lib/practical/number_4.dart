@@ -14,23 +14,23 @@ class _Number4State extends State<Number4> {
     return Scaffold(
         appBar: AppBar(
 
-
-            actions: <Widget>[
-              IconButton(
-                icon: const Icon(
-                  Icons.bookmark,
-                  color: Colors.white,
-                  semanticLabel: 'Bookmark',
-                ),
-                onPressed: () {
-                  _pdfViewerKey.currentState?.openBookmarkView();
-                },
-              ),
-            ]
+            //
+            // actions: <Widget>[
+            //   IconButton(
+            //     icon: const Icon(
+            //       Icons.bookmark,
+            //       color: Colors.white,
+            //       semanticLabel: 'Bookmark',
+            //     ),
+            //     onPressed: () {
+            //       _pdfViewerKey.currentState?.openBookmarkView();
+            //     },
+            //   ),
+            // ]
         ),
 
         body: SfPdfViewer.asset(
-          'assets/number_4.pdf',
+          'assets/4-pr.pdf',
           key: _pdfViewerKey,
         )
 

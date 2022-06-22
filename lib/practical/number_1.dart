@@ -15,22 +15,22 @@ class _Number1State extends State<Number1> {
         appBar: AppBar(
 
 
-            actions: <Widget>[
-              IconButton(
-                icon: const Icon(
-                  Icons.bookmark,
-                  color: Colors.white,
-                  semanticLabel: 'Bookmark',
-                ),
-                onPressed: () {
-                  _pdfViewerKey.currentState?.openBookmarkView();
-                },
-              ),
-            ]
+            // actions: <Widget>[
+            //   IconButton(
+            //     icon: const Icon(
+            //       Icons.bookmark,
+            //       color: Colors.white,
+            //       semanticLabel: 'Bookmark',
+            //     ),
+            //     onPressed: () {
+            //       _pdfViewerKey.currentState?.openBookmarkView();
+            //     },
+            //   ),
+            // ]
         ),
 
         body: SfPdfViewer.asset(
-          'assets/number_1.pdf',
+          'assets/1-pr.pdf',
           key: _pdfViewerKey,
         )
 

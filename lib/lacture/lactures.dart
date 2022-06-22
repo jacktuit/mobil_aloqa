@@ -1,36 +1,40 @@
 import 'package:flutter/material.dart';
-import 'package:mobil_aloqa/practical/number_3.dart';
+import 'package:mobil_aloqa/lacture/number_4_lec.dart';
+import 'package:mobil_aloqa/lacture/number_9_lec.dart';
+
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 
-import 'number_1.dart';
-import 'number_2.dart';
-import 'number_4.dart';
-import 'number_5.dart';
-import 'number_6.dart';
-import 'number_7.dart';
-import 'number_8.dart';
+import 'number_10_lec.dart';
+import 'number_1_lec.dart';
+import 'number_2_lec.dart';
+import 'number_3_lec.dart';
+import 'number_5_lec.dart';
+import 'number_6_lec.dart';
+import 'number_7_lec.dart';
+import 'number_8_lec.dart';
 
-class NumbersPractical extends StatefulWidget {
-  const NumbersPractical({Key? key}) : super(key: key);
+class NumbersLecture extends StatefulWidget {
+  const NumbersLecture({Key? key}) : super(key: key);
 
   @override
-  State<NumbersPractical> createState() => _NumbersPracticalState();
+  State<NumbersLecture> createState() => _NumbersLectureState();
 }
 
 final GlobalKey<SfPdfViewerState> _pdfViewerKey = GlobalKey();
 
-class _NumbersPracticalState extends State<NumbersPractical> {
+class _NumbersLectureState extends State<NumbersLecture> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          backgroundColor:   Color(0xffF7CB44),
           centerTitle: true,
+          backgroundColor:  Color(0xffF7CB44),
           title: Text(
-            'Amaliy ishlari',
+            'Maruzalar',
             style: TextStyle(color: Colors.black),
           ),
         ),
+        backgroundColor: Colors.black,
         body: Container(
           decoration: BoxDecoration(
 
@@ -52,20 +56,19 @@ class _NumbersPracticalState extends State<NumbersPractical> {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => Number1(),
+                              builder: (context) => Number1_Lec(),
                             ));
                       });
                     },
                     child: Container(
                         padding: EdgeInsets.only(top: 12, bottom: 12),
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(16),
-                          color: Color(0xffF7CB44),
-                        ),
+                            borderRadius: BorderRadius.circular(16),
+                            color: Color(0xffF7CB44)),
                         width: double.infinity,
                         child: Center(
                             child: Text(
-                          '1- Amaliy ish',
+                          '1- Maruza',
                           style: TextStyle(color: Colors.black, fontSize: 16),
                         )))),
                 SizedBox(
@@ -77,20 +80,19 @@ class _NumbersPracticalState extends State<NumbersPractical> {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => Number2(),
+                              builder: (context) => Number2_Lec(),
                             ));
                       });
                     },
                     child: Container(
                         padding: EdgeInsets.only(top: 12, bottom: 12),
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(16),
-                          color: Color(0xffF7CB44),
-                        ),
+                            borderRadius: BorderRadius.circular(16),
+                            color: Color(0xffF7CB44)),
                         width: double.infinity,
                         child: Center(
                             child: Text(
-                          '2- Amaliy ish',
+                          '2-Maruza',
                           style: TextStyle(color: Colors.black, fontSize: 16),
                         )))),
                 SizedBox(
@@ -102,20 +104,19 @@ class _NumbersPracticalState extends State<NumbersPractical> {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => Number3(),
+                              builder: (context) => Number3_Lec(),
                             ));
                       });
                     },
                     child: Container(
                         padding: EdgeInsets.only(top: 12, bottom: 12),
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(16),
-                          color: Color(0xffF7CB44),
-                        ),
+                            borderRadius: BorderRadius.circular(16),
+                            color: Color(0xffF7CB44)),
                         width: double.infinity,
                         child: Center(
                             child: Text(
-                          '3- Amaliy ish',
+                          '3- Maruza',
                           style: TextStyle(color: Colors.black, fontSize: 16),
                         )))),
                 SizedBox(
@@ -127,20 +128,19 @@ class _NumbersPracticalState extends State<NumbersPractical> {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => Number4(),
+                              builder: (context) => Number4_Lec(),
                             ));
                       });
                     },
                     child: Container(
                         padding: EdgeInsets.only(top: 12, bottom: 12),
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(16),
-                          color: Color(0xffF7CB44),
-                        ),
+                            borderRadius: BorderRadius.circular(16),
+                            color: Color(0xffF7CB44)),
                         width: double.infinity,
                         child: Center(
                             child: Text(
-                          '4- Amaliy ish',
+                          '4- Maruza',
                           style: TextStyle(color: Colors.black, fontSize: 16),
                         )))),
                 SizedBox(
@@ -152,20 +152,19 @@ class _NumbersPracticalState extends State<NumbersPractical> {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => Number5(),
+                              builder: (context) => Number5_Lec(),
                             ));
                       });
                     },
                     child: Container(
                         padding: EdgeInsets.only(top: 12, bottom: 12),
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(16),
-                          color: Color(0xffF7CB44),
-                        ),
+                            borderRadius: BorderRadius.circular(16),
+                            color: Color(0xffF7CB44)),
                         width: double.infinity,
                         child: Center(
                             child: Text(
-                          '5- Amaliy ish',
+                          '5- Maruza',
                           style: TextStyle(color: Colors.black, fontSize: 16),
                         )))),
                 SizedBox(
@@ -177,22 +176,46 @@ class _NumbersPracticalState extends State<NumbersPractical> {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => Number6(),
+                              builder: (context) => Number6_Lec(),
                             ));
                       });
                     },
                     child: Container(
                         padding: EdgeInsets.only(top: 12, bottom: 12),
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(16),
-                          color: Color(0xffF7CB44),
-                        ),
+                            borderRadius: BorderRadius.circular(16),
+                            color: Color(0xffF7CB44)),
                         width: double.infinity,
                         child: Center(
                             child: Text(
-                          '6- Amaliy ish',
+                          '6- Maruza',
                           style: TextStyle(color: Colors.black, fontSize: 16),
                         )))),
+                SizedBox(
+                  height: 10,
+                ),
+
+                InkWell(
+                    onTap: () {
+                      setState(() {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => Number7_Lec(),
+                            ));
+                      });
+                    },
+                    child: Container(
+                        padding: EdgeInsets.only(top: 12, bottom: 12),
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(16),
+                            color: Color(0xffF7CB44)),
+                        width: double.infinity,
+                        child: Center(
+                            child: Text(
+                              '7- Maruza',
+                              style: TextStyle(color: Colors.black, fontSize: 16),
+                            )))),
                 SizedBox(
                   height: 10,
                 ),
@@ -202,22 +225,22 @@ class _NumbersPracticalState extends State<NumbersPractical> {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => Number7(),
+                              builder: (context) => Number8_Lec(),
                             ));
                       });
                     },
                     child: Container(
                         padding: EdgeInsets.only(top: 12, bottom: 12),
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(16),
-                          color: Color(0xffF7CB44),
-                        ),
+                            borderRadius: BorderRadius.circular(16),
+                            color: Color(0xffF7CB44)),
                         width: double.infinity,
                         child: Center(
                             child: Text(
-                          '7- Amaliy ish',
-                          style: TextStyle(color: Colors.black, fontSize: 16),
-                        )))),SizedBox(
+                              '8- Maruza',
+                              style: TextStyle(color: Colors.black, fontSize: 16),
+                            )))),
+                SizedBox(
                   height: 10,
                 ),
                 InkWell(
@@ -226,25 +249,46 @@ class _NumbersPracticalState extends State<NumbersPractical> {
                         Navigator.push(
                             context,
                             MaterialPageRoute(
-                              builder: (context) => Number8(),
+                              builder: (context) => Number1112_Lec(),
                             ));
                       });
                     },
                     child: Container(
                         padding: EdgeInsets.only(top: 12, bottom: 12),
                         decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(16),
-                          color: Color(0xffF7CB44),
-                        ),
+                            borderRadius: BorderRadius.circular(16),
+                            color: Color(0xffF7CB44)),
                         width: double.infinity,
                         child: Center(
                             child: Text(
-                          '8- Amaliy ish',
-                          style: TextStyle(color: Colors.black, fontSize: 16),
-                        )))),
+                              '11-12- Maruza',
+                              style: TextStyle(color: Colors.black, fontSize: 16),
+                            )))),
                 SizedBox(
                   height: 10,
                 ),
+                InkWell(
+                    onTap: () {
+                      setState(() {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                              builder: (context) => Number1415_Lec(),
+                            ));
+                      });
+                    },
+                    child: Container(
+                        padding: EdgeInsets.only(top: 12, bottom: 12),
+                        decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(16),
+                            color: Color(0xffF7CB44)),
+                        width: double.infinity,
+                        child: Center(
+                            child: Text(
+                              '14-15- Maruza',
+                              style: TextStyle(color: Colors.black, fontSize: 16),
+                            )))),
+
               ],
             ),
           ),

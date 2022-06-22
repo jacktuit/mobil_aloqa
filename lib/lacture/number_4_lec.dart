@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
-class Number5 extends StatefulWidget {
-  const Number5({Key? key}) : super(key: key);
+class Number4_Lec extends StatefulWidget {
+  const Number4_Lec({Key? key}) : super(key: key);
 
   @override
-  State<Number5> createState() => _Number5State();
+  State<Number4_Lec> createState() => _Number4_LecState();
 }
 final GlobalKey<SfPdfViewerState> _pdfViewerKey = GlobalKey();
 
-class _Number5State extends State<Number5> {
+class _Number4_LecState extends State<Number4_Lec> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -30,7 +30,7 @@ class _Number5State extends State<Number5> {
         ),
 
         body: SfPdfViewer.asset(
-          'assets/5-pr.pdf',
+          'assets/4lecture.pdf',
           key: _pdfViewerKey,
         )
 

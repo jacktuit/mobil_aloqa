@@ -4,6 +4,8 @@ import 'package:mobil_aloqa/laboratory/numbers_lab.dart';
 import 'package:mobil_aloqa/practical/numbers.dart';
 import 'package:syncfusion_flutter_pdfviewer/pdfviewer.dart';
 
+import 'lacture/lactures.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -17,10 +19,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.orange,
+      home: const MyHomePage(
+        title: 'Mobil aloqa tarmoqlarini loyihalash',
       ),
-      home: const MyHomePage(title: 'Mobil aloqa tarmoqlarini loyihalash',),
     );
   }
 }
@@ -42,16 +43,52 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(title: Text(widget.title,style: TextStyle(color: Colors.white,fontSize: 14),),
-            centerTitle: true,
-           ),
+        appBar: AppBar(
+          backgroundColor: Color(0xffF7CB44),
+          title: Text(
+            widget.title,
+            style: TextStyle(color: Colors.black, fontSize: 16,fontWeight: FontWeight.bold),
+          ),
+          centerTitle: true,
+        ),
         body: Container(
-          padding: EdgeInsets.only(left: 20,right: 20),
-          decoration: BoxDecoration(image: DecorationImage(image:ExactAssetImage('assets/tatu.jpg',),fit: BoxFit.cover )),
+          padding: EdgeInsets.only(left: 20, right: 20),
+          decoration: BoxDecoration(
+
+              image: DecorationImage(
+                  image: ExactAssetImage(
+                    'assets/222.jpg',
+                  ),
+                  fit: BoxFit.cover)),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
+              InkWell(
+                  onTap: () {
+                    setState(() {
+                      Navigator.push(
+                          context,
+                          MaterialPageRoute(
+                            builder: (context) => NumbersLecture(),
+                          ));
+                    });
+                  },
+                  child: Container(
+                      padding: EdgeInsets.only(top: 12, bottom: 12),
+                      decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(16),
+                        color: Color(0xffF7CB44),
+                      ),
+                      width: double.infinity,
+                      child: Center(
+                          child: Text(
+                        'Ma`ruza',
+                        style: TextStyle(color: Colors.black, fontSize: 16,fontWeight: FontWeight.w600),
+                      )))),
+              SizedBox(
+                height: 20,
+              ),
               InkWell(
                   onTap: () {
                     setState(() {
@@ -66,13 +103,13 @@ class _MyHomePageState extends State<MyHomePage> {
                       padding: EdgeInsets.only(top: 12, bottom: 12),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(16),
-                        color: Colors.orangeAccent,
+                        color: Color(0xffF7CB44),
                       ),
                       width: double.infinity,
                       child: Center(
                           child: Text(
                         'Amaliy ish',
-                        style: TextStyle(color: Colors.white, fontSize: 16),
+                        style: TextStyle(color: Colors.black, fontSize: 16,fontWeight: FontWeight.w600),
                       )))),
               SizedBox(
                 height: 20,
@@ -91,13 +128,13 @@ class _MyHomePageState extends State<MyHomePage> {
                       padding: EdgeInsets.only(top: 12, bottom: 12),
                       decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(16),
-                        color: Colors.orangeAccent,
+                        color: Color(0xffF7CB44),
                       ),
                       width: double.infinity,
                       child: Center(
                           child: Text(
                         'Laboratoriya ',
-                        style: TextStyle(color: Colors.white, fontSize: 16),
+                        style: TextStyle(color: Colors.black, fontSize: 16,fontWeight: FontWeight.w600),
                       )))),
             ],
           ),
